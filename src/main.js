@@ -112,10 +112,29 @@ function initMobileNav() {
   const mobileNav = document.getElementById('mobile-nav-drawer');
   if (!toggleBtn || !mobileNav) return;
 
-  toggleBtn.addEventListener('click', () => {
+  function closeMenu() {
+    mobileNav.classList.remove('open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleBtn.textContent = '☰';
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = mobileNav.classList.toggle('open');
     toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     toggleBtn.textContent = isOpen ? '✕' : '☰';
+  });
+
+  // Close when tapping any link inside mobile nav
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && e.target !== toggleBtn) {
+      closeMenu();
+    }
   });
 }
 

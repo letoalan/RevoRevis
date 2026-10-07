@@ -90,15 +90,42 @@ export function setupAudioPlayer(options = {}) {
     });
   }
 
-  // Seeking on progress container click
+  // Seeking on progress container click and touch/pointer drag
   if (progressContainer) {
-    progressContainer.addEventListener('click', (e) => {
+    let isDragging = false;
+
+    function seek(e) {
       const rect = progressContainer.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
+      const clientX = e.clientX ?? (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+      const clickX = Math.max(0, Math.min(clientX - rect.left, rect.width));
       const width = rect.width;
-      if (audio.duration) {
+      if (audio.duration && width > 0) {
         audio.currentTime = (clickX / width) * audio.duration;
       }
+    }
+
+    progressContainer.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      seek(e);
+      progressContainer.setPointerCapture(e.pointerId);
+    });
+
+    progressContainer.addEventListener('pointermove', (e) => {
+      if (isDragging) {
+        seek(e);
+      }
+    });
+
+    progressContainer.addEventListener('pointerup', (e) => {
+      if (isDragging) {
+        seek(e);
+        isDragging = false;
+        try { progressContainer.releasePointerCapture(e.pointerId); } catch (_) {}
+      }
+    });
+
+    progressContainer.addEventListener('pointercancel', () => {
+      isDragging = false;
     });
   }
 
