@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3 : 1793-1799 — Terreur, réactions et Directoire | RevoRevis</title>
+  <meta name="description" content="Révision Histoire 1ère : Période 3 (1793-1799) - La République dans la tourmente, le gouvernement révolutionnaire de l'an II, la Terreur et le Directoire. Podcast audio, schéma Mermaid et quiz.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+  <div id="reading-progress"></div>
+
+  <!-- Barre de navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="RevoRevis Accueil">
+        <span class="brand-badge">RR</span>
+        <div>
+          <span class="brand-text">RevoRevis</span>
+          <span class="brand-sub">Histoire Première générale</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="p1.html" class="nav-link">P1 : 1789-1791</a></li>
+          <li><a href="p2.html" class="nav-link">P2 : 1791-1792</a></li>
+          <li><a href="p3.html" class="nav-link active">P3 : 1793-1799</a></li>
+          <li><a href="p4.html" class="nav-link">P4 : 1799-1815</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button type="button" class="theme-btn" id="theme-toggle-btn" aria-label="Changer le thème">🌙</button>
+        <button type="button" class="menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-nav" id="mobile-nav-drawer">
+    <ul>
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="p1.html" class="nav-link">P1 : 1789-1791</a></li>
+      <li><a href="p2.html" class="nav-link">P2 : 1791-1792</a></li>
+      <li><a href="p3.html" class="nav-link active">P3 : 1793-1799</a></li>
+      <li><a href="p4.html" class="nav-link">P4 : 1799-1815</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <!-- En-tête : Titre & Métadonnées -->
+    <header class="page-hero">
+      <div class="hero-meta">
+        <span class="period-badge">Période 3 • 1793-1799</span>
+        <span class="level-tag">Première Générale</span>
+        <span class="level-tag">Terreur & Directoire</span>
+      </div>
+      <h1 class="page-title">La République dans la tourmente : Terreur, réactions et Directoire</h1>
+      <p class="page-lead">
+        Encerclée par la coalition des monarchies européennes et déchirée par l'insurrection royaliste en Vendée et les révoltes fédéralistes, la République suspend ses libertés constitutionnelles. Sous l'égide du Comité de salut public, la Terreur sauve militairement la patrie avant que la bourgeoisie thermidorienne n'instaure la fragile république des notables du Directoire.
+      </p>
+    </header>
+
+    <!-- 1. Frise de dates -->
+    <section class="timeline-strip" aria-label="Frise chronologique de la période 1793-1799">
+      <div class="timeline-header">
+        <h2 class="timeline-title"><span>⏳</span> Frise chronologique (1793 - 1799)</h2>
+        <span style="font-size: 0.85rem; color: var(--text-subtle);">Des périls extrêmes au coup d'État</span>
+      </div>
+      <div class="timeline-track">
+        <div class="timeline-step">
+          <div class="timeline-date">21 janv. 1793</div>
+          <div class="timeline-desc">Exécution de Louis XVI</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">Mars 1793</div>
+          <div class="timeline-desc">Guerre de Vendée & 1ère coalition</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">2 juin 1793</div>
+          <div class="timeline-desc">Chute et arrestation des Girondins</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">Sept. 1793</div>
+          <div class="timeline-desc">Terreur & Loi des suspects</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">26 juin 1794</div>
+          <div class="timeline-desc">Victoire française de Fleurus</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">9 thermidor an II</div>
+          <div class="timeline-desc">Chute de Robespierre (27 juillet 1794)</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">Oct. 1795</div>
+          <div class="timeline-desc">Instauration du Directoire censitaire</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">18 brumaire</div>
+          <div class="timeline-desc">Coup d'État de Bonaparte (nov. 1799)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lecteur audio avec transcription repliable -->
+    <section class="audio-station" aria-label="Podcast de cours Période 3">
+      <div class="audio-header">
+        <div class="audio-info">
+          <div class="audio-icon-box" aria-hidden="true">🎙️</div>
+          <div>
+            <h2 class="audio-title">Le Podcast du Chapitre : P3 (1793-1799)</h2>
+            <p class="audio-subtitle">Écoute active • Synthèse orale complète du cours (13 min 01)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="audio-controls-row">
+        <button type="button" class="play-toggle-btn" aria-label="Écouter le podcast">▶</button>
+        <button type="button" class="speed-toggle-btn" aria-label="Vitesse de lecture 1x">1×</button>
+        <div class="audio-scrubber-box">
+          <span class="time-display current-time">00:00</span>
+          <div class="progress-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <span class="time-display duration-time">13:01</span>
+        </div>
+      </div>
+
+      <audio preload="none" data-audio-file="assets/mp3/p3.mp3" controls class="audio-native">
+        Votre navigateur ne prend pas en charge la balise audio.
+      </audio>
+
+      <button type="button" class="transcription-toggle" aria-expanded="false">
+        <span>📜 Afficher la transcription textuelle intégrale du podcast</span>
+        <span class="toggle-icon">▼</span>
+      </button>
+
+      <div class="transcription-body">
+        <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Transcription intégrale du cours oral :</h3>
+        <p>
+          « Dans ce troisième volet, la jeune République traverse sa crise existentielle la plus tragique. En janvier 1793, l'exécution de Louis XVI soude contre la France toute l'Europe monarchique. À l'intérieur, la levée des 300 000 hommes provoque l'insurrection catholique et royaliste de Vendée, tandis que l'arrestation des députés girondins le 2 juin déclenche les révoltes fédéralistes à Bordeaux, Marseille ou Lyon.
+        </p>
+        <p style="margin-top: 0.5rem;">
+          Face à ces périls mortels, les Montagnards dominés par Robespierre et Saint-Just mettent la Terreur à l'ordre du jour. Le gouvernement révolutionnaire centralise tous les pouvoirs dans le Comité de salut public, vote la Loi des suspects et décrète la levée en masse ainsi que le blocage du prix des subsistances. La répression est implacable. Mais une fois le territoire sauvé à Fleurus en juin 1794, l'atmosphère de purge devient insupportable : le 9 thermidor, Robespierre est renversé. Les Thermidoriens fondent alors le Directoire en 1795 : une république modérée et censitaire, mais minée par la corruption et l'instabilité politique, préparant l'avènement d'un jeune général ambitieux, Napoléon Bonaparte. »
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Question guide + 3 idées clés (carte mentale) -->
+    <section class="study-section">
+      <div class="guide-banner">
+        <div class="guide-label">Problématique directrice du chapitre</div>
+        <p class="guide-question">
+          Face aux menaces intérieures et extérieures, comment la République justifie-t-elle des mesures d'exception avant de chercher la stabilité bourgeoise sous le Directoire ?
+        </p>
+      </div>
+
+      <div class="key-ideas-grid">
+        <div class="idea-card">
+          <div class="idea-number">1</div>
+          <h3 class="idea-title">L'encerclement par les périls mortels</h3>
+          <p class="idea-body">
+            Après la mort du roi (21 janvier 1793), l'Angleterre fédère la <strong>Première Coalition</strong>. Simultanément, la France plonge dans la guerre civile : <strong>guerre de Vendée</strong> et <strong>insurrections fédéralistes</strong> embrasent plus de 60 départements.
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">2</div>
+          <h3 class="idea-title">Le gouvernement d'exception et la Terreur</h3>
+          <p class="idea-body">
+            La Constitution de 1793 est suspendue « jusqu'à la paix ». Le <strong>Comité de salut public</strong> centralise l'effort de guerre (levée en masse, dirigisme économique du Maximum) et confie au <strong>Tribunal révolutionnaire</strong> l'élimination expéditive des « suspects ».
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">3</div>
+          <h3 class="idea-title">Thermidor et l'impasse du Directoire</h3>
+          <p class="idea-body">
+            Après l'élimination de Robespierre (<strong>9 thermidor an II</strong>), les modérés confisquent le pouvoir au profit des propriétaires fortunés (suffrage censitaire de l'an III). Fragilisé par les coups d'État répétés et l'inflation, le Directoire s'en remet à l'armée.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Schéma heuristique Mermaid -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🧭</span> Schéma heuristique de la période (1793-1799)</h2>
+        <span class="section-pill">Mermaid Diagram</span>
+      </div>
+
+      <div class="mermaid-card">
+        <div class="mermaid-meta">
+          <span style="font-weight: 700; color: var(--text-main);">Dynamique : Périls existentiels ➔ Gouvernement de Terreur ➔ Réaction thermidorienne & Directoire</span>
+          <span class="mermaid-hint">🔍 Explorez l'enchaînement de la dictature de salut public</span>
+        </div>
+        <div class="mermaid-box">
+          <pre class="mermaid">
+flowchart TD
+    subgraph Menaces1793["1. La République encerclée (Printemps 1793)"]
+        T1["Première coalition européenne aux frontières (Prusse, Autriche, Angleterre, Espagne)"]
+        T2["Guerre civile de Vendée (insurrection paysanne et catholique)"]
+        T3["Révoltes fédéralistes en province (Lyon, Toulon, Marseille, Bordeaux)"]
+        T4["Effondrement de l'assignat & disette dans les villes"]
+    end
+
+    subgraph SalutPublic["2. Le Gouvernement révolutionnaire et la Terreur (1793-1794)"]
+        S1["Suspension des libertés : gouvernement 'révolutionnaire jusqu'à la paix'"]
+        S2["Comité de salut public (Robespierre, Saint-Just) & Comité de sûreté générale"]
+        S3["Loi des suspects & Tribunal révolutionnaire (plus de 40 000 exécutés)"]
+        S4["Levée en masse (1 million de soldats) & loi du Maximum général sur les prix"]
+        S5["Déchristianisation & nouveau calendrier républicain"]
+    end
+
+    subgraph SortieDeCrise["3. Thermidor et l'expérience du Directoire (1794-1799)"]
+        D1["Victoire de Fleurus (juin 1794) : la patrie n'est plus en péril immédiat"]
+        D2["9 thermidor an II (27 juillet 1794) : chute et exécution de Robespierre"]
+        D3["Constitution de l'an III (1795) : retour au suffrage censitaire & exécutif à 5 Directeurs"]
+        D4["Instabilité permanente (menaces royalistes à droite, babouvistes à gauche)"]
+        D5["Recours récurrent à l'armée menant au coup d'État du 18 brumaire"]
+    end
+
+    Menaces1793 --> SalutPublic
+    SalutPublic --> SortieDeCrise
+          </pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Tableau synthétique : Les rouages de la Terreur -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🏛️</span> Tableau synthétique des institutions de la Terreur</h2>
+        <span class="section-pill">Gouvernement de salut public</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Institution révolutionnaire</th>
+              <th style="width: 25%;">Acteurs majeurs</th>
+              <th style="width: 25%;">Fonctions et Pouvoirs</th>
+              <th style="width: 25%;">Portée historique</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="strong-cell">Comité de salut public</td>
+              <td>Robespierre, Saint-Just, Couthon, Carnot (« l'organisateur de la victoire »)</td>
+              <td>Organe exécutif suprême de fait. Contrôle les ministres, dirige la guerre, la diplomatie et l'économie nationale.</td>
+              <td><span class="tag-badge tag-politique">Centralisation</span> Suspension de la séparation des pouvoirs au nom de l'urgence suprême de salut public.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Comité de sûreté générale</td>
+              <td>Vadier, Amar, députés montagnards</td>
+              <td>Ministère de la police politique révolutionnaire. Dirige les arrestations, traque les conspirateurs et applique la Loi des suspects.</td>
+              <td><span class="tag-badge tag-social">Surveillance</span> Réseau dense de surveillance civique étendu à tous les comités de quartier.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Tribunal révolutionnaire</td>
+              <td>Fouquier-Tinville (accusateur public), Herman</td>
+              <td>Cour de justice d'exception siégeant à Paris. Juge les crimes contre la République sans appel possible (peine de mort quasi systématique).</td>
+              <td><span class="tag-badge tag-danger">Répression</span> Instrumentalisation de la guillotine : procès de Marie-Antoinette, des Girondins, de Danton.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Représentants en mission</td>
+              <td>Carrier (Nantes), Fouché et Collot d'Herbois (Lyon)</td>
+              <td>Députés de la Convention envoyés avec les pleins pouvoirs dans les provinces et aux armées pour purger les traîtres et organiser la levée.</td>
+              <td><span class="tag-badge tag-guerre">Terreur locale</span> Noyades de Nantes, mitraillades de Lyon : violences paroxystiques contre les insurgés.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Tableau comparatif : Montagne vs Thermidor vs Directoire -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>⚖️</span> Tableau comparatif des trois phases républicaines (1793-1799)</h2>
+        <span class="section-pill">Analyse politique</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th style="width: 18%;">Critère</th>
+              <th style="width: 27%;">Convention montagnarde (1793-1794)</th>
+              <th style="width: 27%;">Convention thermidorienne (1794-1795)</th>
+              <th style="width: 28%;">Le Directoire (1795-1799)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="strong-cell">Régime & Pouvoir exécutif</td>
+              <td><strong>Gouvernement révolutionnaire d'exception</strong> : concentration des pouvoirs dans le Comité de salut public.</td>
+              <td><strong>Régime de transition parlementaire</strong> : démantèlement de la Terreur et réorganisation des comités.</td>
+              <td><strong>Directoire constitutionnel</strong> : 5 directeurs se partageant l'exécutif, 2 assemblées législatives (Cinq-Cents et Anciens).</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Système électoral & Suffrage</td>
+              <td><strong>Suffrage universel masculin</strong> inscrit dans la Constitution de 1793 (mais application suspendue jusqu'à la paix).</td>
+              <td>Suppression progressive des acquis populaires, préparation de la constitution de l'an III.</td>
+              <td><strong>Suffrage censitaire strict</strong> : rétablissement du vote réservé aux propriétaires riches pour écarter le peuple.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Politique économique</td>
+              <td><strong>Dirigisme d'État strict</strong> : loi du Maximum (prix plafonnés pour le pain et la farine), réquisitions, égalité du pain.</td>
+              <td><strong>Libéralisme effréné</strong> : abolition du Maximum, effondrement complet de l'assignat et famine populaire à l'hiver 1795.</td>
+              <td>Stabilisation monétaire par le pillage des territoires conquis, suppression du papier-monnaie et finances assises sur la guerre.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Appui social privilégié</td>
+              <td>Alliance étroite entre la bourgeoisie jacobine et les <strong>sans-culottes</strong> parisiens.</td>
+              <td>Bourgeoisie d'affaires, « Jeunesse dorée » anti-jacobine, républicains modérés.</td>
+              <td>Bourgeoisie possédante, spéculateurs, officiers supérieurs et généraux de l'armée républicaine.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. Galerie d'images & Document à commenter -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🖼️</span> Galerie historique : L'art sous la Terreur</h2>
+        <span class="section-pill">Documents iconographiques</span>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Image 1 : Mort de Marat -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/mort_marat.webp" alt="La Mort de Marat peinte par Jacques-Louis David" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <h3 class="art-title">La Mort de Marat (13 juillet 1793)</h3>
+            <p class="art-artist">Jacques-Louis David (1748-1825), huile sur toile, 1793.</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+              Peinture martyre représentant « l'Ami du peuple » assassiné dans sa baignoire par Charlotte Corday. David transforme le journaliste révolutionnaire en une icône laïque semblable au Christ.
+            </p>
+            <div class="art-meta">
+              <span>Musées royaux de Belgique</span>
+              <span class="art-license">Domaine Public</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image 2 : Comité révolutionnaire -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/comite_revolutionnaire.webp" alt="Intérieur d'un comité révolutionnaire sous la Terreur par Fragonard" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <h3 class="art-title">Intérieur d'un comité révolutionnaire</h3>
+            <p class="art-artist">Alexandre-Évariste Fragonard (d'après), estampe, vers 1793-1795.</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+              Cette scène saisissante illustre le pouvoir arbitraire des comités locaux de surveillance interrogeant des citoyens sous le regard des bustes de Brutus et Marat, dans une ambiance de délation.
+            </p>
+            <div class="art-meta">
+              <span>Musée Carnavalet (Paris)</span>
+              <span class="art-license">CC0 / Domaine Public</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Document court à commenter type Bac -->
+      <div class="document-card">
+        <span class="doc-badge">Document d'époque à commenter • Type Bac</span>
+        <h3 class="doc-title">Décret relatif aux gens suspects (Loi des suspects)</h3>
+        <p class="doc-source">Voté par la Convention nationale le 17 septembre 1793 (extraits des articles 1 et 2).</p>
+
+        <div class="doc-quote-box">
+          <p>« <strong>Article 1er.</strong> Immédiatement après la publication du présent décret, tous les gens suspects qui se trouvent dans le territoire de la République et qui sont encore en liberté seront mis en état d'arrestation.</p>
+          <p style="margin-top: 0.5rem;"><strong>Article 2.</strong> Sont réputés gens suspects :</p>
+          <p style="margin-left: 1rem;">1° Ceux qui, soit par leur conduite, soit par leurs relations, soit par leurs propos ou leurs écrits, se sont montrés partisans de la tyrannie ou du fédéralisme, et ennemis de la liberté ;</p>
+          <p style="margin-left: 1rem;">2° Ceux qui ne pourront pas justifier, de la manière prescrite par le décret du 21 mars dernier, de leurs moyens d'exister et de l'acquit de leurs devoirs civiques ;</p>
+          <p style="margin-left: 1rem;">3° Ceux à qui il a été refusé des certificats de civisme ;</p>
+          <p style="margin-left: 1rem;">4° Les fonctionnaires publics suspendus ou destitués de leurs fonctions par la Convention nationale ou par ses commissaires [...] ;</p>
+          <p style="margin-left: 1rem;">5° Ceux des ci-devant nobles, ensemble les maris, femmes, pères, mères, fils ou filles, frères ou sœurs, et agents d'émigrés, qui n'ont pas constamment manifesté leur attachement à la Révolution ;</p>
+          <p style="margin-left: 1rem;">6° Ceux qui ont émigré dans l'intervalle du 1er juillet 1789 à la publication du décret du 8 avril 1792. »</p>
+        </div>
+
+        <div class="doc-prompts">
+          <h4>Consigne d'analyse type épreuve commune du Baccalauréat :</h4>
+          <ol>
+            <li>Dans quel contexte historique de menaces nationales ce décret d'exception est-il adopté en septembre 1793 ?</li>
+            <li>Montrez, en analysant la formulation de l'article 2, en quoi cette loi autorise une répression judiciaire arbitraire et quasi illimitée.</li>
+            <li>Confrontez ce texte aux principes fondateurs de la DDHC de 1789 (présomption d'innocence, liberté d'opinion). Comment les Montagnards justifiaient-ils cette contradiction ?</li>
+          </ol>
+        </div>
+
+        <button type="button" class="doc-corrige-toggle" aria-expanded="false">
+          <span class="corrige-arrow">▼ Afficher</span> les pistes de correction et conseils méthodologiques
+        </button>
+        <div class="doc-corrige-content">
+          <p><strong>Pistes de réponse & Éléments de valorisation :</strong></p>
+          <ul style="padding-left: 1.25rem; margin-top: 0.5rem; line-height: 1.6;">
+            <li><strong>Contexte de crise paroxystique :</strong> À la fin de l'été 1793, Toulon s'est livrée aux Anglais, la Vendée est en feu, l'assassinat de Marat a traumatisé les sans-culottes qui exigent que la « Terreur soit mise à l'ordre du jour ».</li>
+            <li><strong>Caractère arbitraire du texte :</strong> La qualification de suspect repose sur des critères flous et subjectifs (« conduite », « propos », zèle civique non prouvé). La charge de la preuve est renversée : tout citoyen doit prouver son dévouement sous peine d'emprisonnement immédiat.</li>
+            <li><strong>Rupture avec 1789 et justification robespierriste :</strong> Le décret viole frontalement l'article 9 de la DDHC (présomption d'innocence) et l'article 10 (liberté d'opinion). Pour Robespierre (« Discours sur les principes du gouvernement révolutionnaire »), « le gouvernement constitutionnel s'occupe de la liberté civile, le gouvernement révolutionnaire de la liberté publique. [...] Il ne doit aux ennemis du peuple que la mort ». C'est la théorie du « despotisme de la liberté contre la tyrannie ».</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Quiz de 5 questions (intégré via JS) -->
+    <section class="study-section" id="page-quiz" aria-label="Quiz interactif de révision">
+      <!-- Le module JS quiz.js injectera ici les 5 questions avec scoring immédiat -->
+    </section>
+
+    <!-- Lexique interactif du Chapitre -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>📖</span> Lexique notionnel du chapitre (1793-1799)</h2>
+        <span class="section-pill">Vocabulaire Bac</span>
+      </div>
+
+      <div style="margin-bottom: 1.25rem;">
+        <input type="search" id="lexique-search" placeholder="🔍 Rechercher un concept (ex : Terreur, Thermidor, Salut public...)" style="width: 100%; max-width: 400px; padding: 0.6rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); background: var(--bg-card); color: var(--text-main); font-size: 0.95rem;">
+      </div>
+
+      <div class="lexique-grid">
+        <div class="lexique-item">
+          <h3 class="lexique-term">Terreur (la)</h3>
+          <p class="lexique-def">Période (septembre 1793 - juillet 1794) durant laquelle le gouvernement révolutionnaire utilise la contrainte judiciaire et policière extrême pour vaincre les ennemis de la République.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Comité de salut public</h3>
+          <p class="lexique-def">Organe restreint créé par la Convention en avril 1793, doté de pouvoirs exécutifs quasi dictatoriaux pour conduire la guerre et coordonner la défense de la République.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Fédéralisme</h3>
+          <p class="lexique-def">Mouvement de révolte dans les grandes métropoles provinciales (Lyon, Marseille, Bordeaux) protestant contre l'hégémonie jacobine et la dictature imposée par les sans-culottes parisiens.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Thermidoriens</h3>
+          <p class="lexique-def">Députés de la Convention ayant provoqué la chute de Robespierre le 9 thermidor an II, partisans de la fin de la Terreur et du rétablissement d'un ordre social bourgeois conservateur.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Loi du Maximum</h3>
+          <p class="lexique-def">Loi de septembre 1793 bloquant le prix maximal des denrées de première nécessité et plafonnant les salaires pour enrayer l'inflation et contenter les sans-culottes.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Directoire</h3>
+          <p class="lexique-def">Régime républicain de 1795 à 1799 caractérisé par une stricte séparation des pouvoirs, un suffrage censitaire réservé aux propriétaires et un exécutif collégial de cinq directeurs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination entre chapitres -->
+    <nav class="pager-nav" aria-label="Pagination des chapitres">
+      <a href="p2.html" class="pager-btn">← Chapitre précédent : P2 (1791-1792)</a>
+      <a href="p4.html" class="pager-btn primary">Chapitre suivant : P4 (1799-1815) →</a>
+    </nav>
+  </main>
+
+  <!-- Modale Image Lightbox -->
+  <div class="modal-overlay" id="image-modal" role="dialog" aria-modal="true" aria-label="Visualisation de l'œuvre d'art">
+    <button type="button" class="modal-close-btn" aria-label="Fermer la vue plein écran">✕</button>
+    <div class="modal-content">
+      <img src="" alt="" class="modal-img">
+      <div class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div>
+        <strong>RevoRevis</strong> — Site de révision d'Histoire Première générale.
+        <br><span style="font-size: 0.8rem; color: var(--text-subtle);">Thème 1, Chapitre 1 : La Révolution française et l'Empire.</span>
+      </div>
+      <div class="footer-links">
+        <a href="credits.json" class="footer-link" target="_blank" rel="noopener">Crédits scientifiques & Licences</a>
+        <a href="https://github.com/letoalan/RevoRevis" class="footer-link" target="_blank" rel="noopener">Code source GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initQuiz } from './src/main.js';
+    import { quizData } from './src/quiz-data.js';
+    initQuiz(quizData.p3, '#page-quiz');
+  </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoRevis — La Révolution française et l'Empire (1789-1815) | Histoire 1ère Générale</title>
+  <meta name="description" content="Plateforme complète de révision d'Histoire Première générale : La Révolution française et l'Empire (1789-1815). Cours, schémas heuristiques Mermaid, podcasts audio, tableaux comparatifs, documents d'époque et quiz interactifs.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+  <div id="reading-progress"></div>
+
+  <!-- En-tête & Barre de navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="RevoRevis Accueil">
+        <span class="brand-badge">RR</span>
+        <div>
+          <span class="brand-text">RevoRevis</span>
+          <span class="brand-sub">Histoire Première générale</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Accueil</a></li>
+          <li><a href="p1.html" class="nav-link">P1 : 1789-1791</a></li>
+          <li><a href="p2.html" class="nav-link">P2 : 1791-1792</a></li>
+          <li><a href="p3.html" class="nav-link">P3 : 1793-1799</a></li>
+          <li><a href="p4.html" class="nav-link">P4 : 1799-1815</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button type="button" class="theme-btn" id="theme-toggle-btn" aria-label="Changer le thème">🌙</button>
+        <button type="button" class="menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-nav" id="mobile-nav-drawer">
+    <ul>
+      <li><a href="index.html" class="nav-link active">Accueil</a></li>
+      <li><a href="p1.html" class="nav-link">P1 : 1789-1791 (Souveraineté & 1ère Constitution)</a></li>
+      <li><a href="p2.html" class="nav-link">P2 : 1791-1792 (Chute de la royauté & 1ère République)</a></li>
+      <li><a href="p3.html" class="nav-link">P3 : 1793-1799 (Terreur, Thermidor & Directoire)</a></li>
+      <li><a href="p4.html" class="nav-link">P4 : 1799-1815 (Consulat, Empire & Chute)</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <!-- Hero Banner -->
+    <section class="page-hero">
+      <div class="hero-meta">
+        <span class="period-badge">Programme officiel de Première</span>
+        <span class="level-tag">Thème 1 • Chapitre 1</span>
+        <span class="level-tag">Épreuve du Baccalauréat</span>
+      </div>
+      <h1 class="page-title">La Révolution française et l'Empire : une nouvelle conception de la nation</h1>
+      <p class="page-lead">
+        Entre 1789 et 1815, la France et l'Europe basculent dans la modernité politique. Découvrez les ruptures décisives, les affrontements idéologiques et les refondations institutionnelles à travers 4 modules complets illustrés, sonorisés et interactifs.
+      </p>
+    </section>
+
+    <!-- Grande Frise Synoptique -->
+    <section class="timeline-strip" aria-label="Frise chronologique générale 1789-1815">
+      <div class="timeline-header">
+        <h2 class="timeline-title"><span>⏳</span> Les 4 grandes étapes de la période (1789 - 1815)</h2>
+        <span style="font-size: 0.85rem; color: var(--text-subtle);">Cliquez sur une période pour réviser</span>
+      </div>
+      <div class="timeline-track">
+        <a href="p1.html" class="timeline-step" style="text-decoration: none;">
+          <div class="timeline-date">1789 — 1791</div>
+          <div class="timeline-desc">Souveraineté nationale & Monarchie constitutionnelle</div>
+        </a>
+        <a href="p2.html" class="timeline-step" style="text-decoration: none;">
+          <div class="timeline-date">1791 — 1792</div>
+          <div class="timeline-desc">Crise monarchique, guerre & Chute de la royauté</div>
+        </a>
+        <a href="p3.html" class="timeline-step" style="text-decoration: none;">
+          <div class="timeline-date">1793 — 1799</div>
+          <div class="timeline-desc">La République en péril : Terreur et Directoire</div>
+        </a>
+        <a href="p4.html" class="timeline-step" style="text-decoration: none;">
+          <div class="timeline-date">1799 — 1815</div>
+          <div class="timeline-desc">L'ordre napoléonien : Du Consulat à l'Empire</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Grille des 4 Périodes de cours -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>📚</span> Les 4 Chapitres d'étude</h2>
+        <span class="section-pill">Modules interactifs</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+        <!-- P1 Card -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/jeu_de_paume.webp" alt="Le Serment du Jeu de paume par Jacques-Louis David" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="tag-badge tag-politique">Période 1</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary);">1789 — 1791</span>
+            </div>
+            <h3 class="art-title">L'affirmation de la souveraineté nationale et l'échec de la monarchie constitutionnelle</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin: 0.5rem 0 1rem;">
+              Comment les Français passent-ils du statut de sujets du Roi à celui de citoyens souverains ? Fin des ordres, prise de la Bastille, DDHC et serment civique.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8rem; color: var(--text-subtle);">🎧 Podcast • 📊 Schéma • 📝 Quiz</span>
+              <a href="p1.html" class="pager-btn primary" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;">Étudier P1 →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P2 Card -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/prise_tuileries.webp" alt="Prise du palais des Tuileries le 10 août 1792 par Duplessis-Bertaux" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="tag-badge tag-guerre">Période 2</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent);">1791 — 1792</span>
+            </div>
+            <h3 class="art-title">La chute de la royauté et la difficile naissance de la République</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin: 0.5rem 0 1rem;">
+              Pourquoi la monarchie constitutionnelle s'effondre-t-elle ? Fuite à Varennes, entrée en guerre, irruption des sans-culottes et assaut des Tuileries le 10 août.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8rem; color: var(--text-subtle);">🎧 Podcast • 📊 Schéma • 📝 Quiz</span>
+              <a href="p2.html" class="pager-btn primary" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;">Étudier P2 →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P3 Card -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/mort_marat.webp" alt="La Mort de Marat par Jacques-Louis David" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="tag-badge tag-social">Période 3</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-danger);">1793 — 1799</span>
+            </div>
+            <h3 class="art-title">La République dans la tourmente : Terreur, réactions et Directoire</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin: 0.5rem 0 1rem;">
+              Face aux invasions et à la guerre civile (Vendée), le gouvernement révolutionnaire instaure la Terreur avant la réaction de Thermidor et la république du Directoire.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8rem; color: var(--text-subtle);">🎧 Podcast • 📊 Schéma • 📝 Quiz</span>
+              <a href="p3.html" class="pager-btn primary" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;">Étudier P3 →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P4 Card -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/sacre_napoleon.webp" alt="Le Sacre de Napoléon par Jacques-Louis David" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="tag-badge tag-institution">Période 4</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-gold);">1799 — 1815</span>
+            </div>
+            <h3 class="art-title">L'ordre napoléonien : Du Consulat à l'Empire</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin: 0.5rem 0 1rem;">
+              Du coup d'État du 18 brumaire à Waterloo : consolidation des « masses de granit » (Code civil, Concordat, préfets), empire dynastique et diffusion européenne.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8rem; color: var(--text-subtle);">🎧 Podcast • 📊 Schéma • 📝 Quiz</span>
+              <a href="p4.html" class="pager-btn primary" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;">Étudier P4 →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Méthodologie Baccalauréat Première -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🎯</span> Méthodologie : L'Analyse de document au Bac</h2>
+        <span class="section-pill">Conseils officiels</span>
+      </div>
+
+      <div class="key-ideas-grid">
+        <div class="idea-card">
+          <div class="idea-number">1</div>
+          <h3 class="idea-title">Présenter précisément le document (DANSE)</h3>
+          <p class="idea-body">
+            Date, Auteur (statut, position politique), Nature (texte de loi, discours, peinture, brochure), Sujet principal et Contexte historique immédiat (périls de 1793, lendemain de Varennes, etc.).
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">2</div>
+          <h3 class="idea-title">Confronter citation et connaissances</h3>
+          <p class="idea-body">
+            Ne jamais paraphraser ! Citez systématiquement entre guillemets de courts passages significatifs et expliquez immédiatement leur portée avec les notions du cours (souveraineté, suffrage censitaire, sans-culotte).
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">3</div>
+          <h3 class="idea-title">Adopter un regard critique</h3>
+          <p class="idea-body">
+            Identifier le point de vue de l'auteur : qui parle ? Quel est le but visé ? Quelles sont les limites ou omissions du document face à la réalité vécue par l'ensemble des contemporains ?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schéma Global de Synthèse du Chapitre (Mermaid) -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🧭</span> Schéma heuristique global du chapitre</h2>
+        <span class="section-pill">Mermaid Diagram</span>
+      </div>
+
+      <div class="mermaid-card">
+        <div class="mermaid-meta">
+          <span style="font-weight: 700; color: var(--text-main);">Vue synoptique de la dynamique révolutionnaire et impériale</span>
+          <span class="mermaid-hint">🔍 Schéma interactif généré dynamiquement</span>
+        </div>
+        <div class="mermaid-box">
+          <pre class="mermaid">
+flowchart LR
+    A["Ancien Régime en crise (1789)"] --> B["1789-1791 : Affirmation de la souveraineté nationale"]
+    B --> C["1791-1792 : Rupture monarchique & Guerre"]
+    C --> D["1793-1794 : République montagnarde & Terreur"]
+    D --> E["1795-1799 : Directoire républicain censitaire"]
+    E --> F["1799-1804 : Consulat & Masses de granit"]
+    F --> G["1804-1815 : Empire napoléonien & Conflits européens"]
+    G --> H["1815 : Congrès de Vienne & Héritage des libertés"]
+          </pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modale Image Lightbox -->
+  <div class="modal-overlay" id="image-modal" role="dialog" aria-modal="true" aria-label="Visualisation de l'œuvre d'art">
+    <button type="button" class="modal-close-btn" aria-label="Fermer la vue plein écran">✕</button>
+    <div class="modal-content">
+      <img src="" alt="" class="modal-img">
+      <div class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div>
+        <strong>RevoRevis</strong> — Site pédagogique d'Histoire pour le cycle terminal (Première générale).
+        <br><span style="font-size: 0.8rem; color: var(--text-subtle);">Conforme aux programmes officiels de l'Éducation Nationale. Déployé sur GitHub Pages via Vite.</span>
+      </div>
+      <div class="footer-links">
+        <a href="credits.json" class="footer-link" target="_blank" rel="noopener">Crédits scientifiques & Licences (credits.json)</a>
+        <a href="https://github.com/letoalan/RevoRevis" class="footer-link" target="_blank" rel="noopener">Code source GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

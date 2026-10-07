@@ -1,0 +1,82 @@
+[
+  {
+    "file": "assets/img/jeu_de_paume.webp",
+    "title": "Le Serment du Jeu de paume",
+    "commons_title": "Jacques Louis David - Le serment du Jeu de Paume",
+    "artist": "Jacques-Louis David",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Louis_David_-_Le_serment_du_Jeu_de_Paume_-_Google_Art_Project.jpg",
+    "license": "Domaine Public",
+    "date": "1791 (inachevé)",
+    "location": "Musée national du château de Versailles"
+  },
+  {
+    "file": "assets/img/prise_bastille.webp",
+    "title": "Prise de la Bastille",
+    "commons_title": "Prise de la Bastille clean",
+    "artist": "Jean-Pierre Houël",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille_clean.jpg",
+    "license": "Domaine Public",
+    "date": "1789",
+    "location": "Bibliothèque nationale de France (BnF)"
+  },
+  {
+    "file": "assets/img/varennes.webp",
+    "title": "Arrestation de Louis XVI à Varennes",
+    "commons_title": "Arrestation de Louis Capet à Varennes",
+    "artist": "Jean-Louis Prieur",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Arrestation_de_Louis_Capet_%C3%A0_Varennes,_22_juin_1791,_Mus%C3%A9e_de_la_R%C3%A9volution_fran%C3%A7aise_-_Vizille.jpg",
+    "license": "Domaine Public",
+    "date": "22 juin 1791",
+    "location": "Musée de la Révolution française (Vizille)"
+  },
+  {
+    "file": "assets/img/prise_tuileries.webp",
+    "title": "Prise du palais des Tuileries (10 août 1792)",
+    "commons_title": "Jacques Bertaux - La Journée du 10 août 1792",
+    "artist": "Jean Duplessis-Bertaux",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Bertaux_-_La_Journ%C3%A9e_du_10_ao%C3%BBt_(1792).jpg",
+    "license": "Domaine Public",
+    "date": "1793",
+    "location": "Musée de l'Histoire de France, Versailles"
+  },
+  {
+    "file": "assets/img/mort_marat.webp",
+    "title": "La Mort de Marat",
+    "commons_title": "Death of Marat by David",
+    "artist": "Jacques-Louis David",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg",
+    "license": "Domaine Public",
+    "date": "1793",
+    "location": "Musées royaux des Beaux-Arts de Belgique"
+  },
+  {
+    "file": "assets/img/comite_revolutionnaire.webp",
+    "title": "Intérieur d'un comité révolutionnaire sous la Terreur",
+    "commons_title": "Intérieur D'un Comité Révolutionnaire",
+    "artist": "Alexandre-Évariste Fragonard (d'après)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Interieur_D%27un_Comit%C3%A9_R%C3%A9volutionnaire_(Paris_1793),_G.29063.jpg",
+    "license": "CC0 / Domaine Public",
+    "date": "Vers 1793-1795",
+    "location": "Musée Carnavalet, Histoire de Paris"
+  },
+  {
+    "file": "assets/img/sacre_napoleon.webp",
+    "title": "Le Sacre de Napoléon Ier",
+    "commons_title": "Jacques-Louis David - The Coronation of Napoleon",
+    "artist": "Jacques-Louis David",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Coronation_of_Napoleon_(1805-1807).jpg",
+    "license": "Domaine Public",
+    "date": "1805-1807",
+    "location": "Musée du Louvre, Paris"
+  },
+  {
+    "file": "assets/img/bataille_austerlitz.webp",
+    "title": "La bataille d'Austerlitz (2 décembre 1805)",
+    "commons_title": "La bataille d'Austerlitz - François Gérard",
+    "artist": "François Gérard",
+    "source_url": "https://commons.wikimedia.org/wiki/File:La_bataille_d%27Austerlitz._2_decembre_1805_(Fran%C3%A7ois_G%C3%A9rard).jpg",
+    "license": "Domaine Public",
+    "date": "1810",
+    "location": "Galerie des Batailles, Château de Versailles"
+  }
+]

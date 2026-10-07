@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P4 : 1799-1815 — L'ordre napoléonien : Du Consulat à l'Empire | RevoRevis</title>
+  <meta name="description" content="Révision Histoire 1ère : Période 4 (1799-1815) - L'ordre napoléonien, les masses de granit, le Sacre et l'Europe impériale. Podcast, schéma Mermaid, tableaux comparatifs et quiz.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+  <div id="reading-progress"></div>
+
+  <!-- Barre de navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="RevoRevis Accueil">
+        <span class="brand-badge">RR</span>
+        <div>
+          <span class="brand-text">RevoRevis</span>
+          <span class="brand-sub">Histoire Première générale</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="p1.html" class="nav-link">P1 : 1789-1791</a></li>
+          <li><a href="p2.html" class="nav-link">P2 : 1791-1792</a></li>
+          <li><a href="p3.html" class="nav-link">P3 : 1793-1799</a></li>
+          <li><a href="p4.html" class="nav-link active">P4 : 1799-1815</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button type="button" class="theme-btn" id="theme-toggle-btn" aria-label="Changer le thème">🌙</button>
+        <button type="button" class="menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-nav" id="mobile-nav-drawer">
+    <ul>
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="p1.html" class="nav-link">P1 : 1789-1791</a></li>
+      <li><a href="p2.html" class="nav-link">P2 : 1791-1792</a></li>
+      <li><a href="p3.html" class="nav-link">P3 : 1793-1799</a></li>
+      <li><a href="p4.html" class="nav-link active">P4 : 1799-1815</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <!-- En-tête : Titre & Métadonnées -->
+    <header class="page-hero">
+      <div class="hero-meta">
+        <span class="period-badge">Période 4 • 1799-1815</span>
+        <span class="level-tag">Première Générale</span>
+        <span class="level-tag">Masses de Granit & Empire</span>
+      </div>
+      <h1 class="page-title">L'ordre napoléonien : Du Consulat à l'Empire</h1>
+      <p class="page-lead">
+        Parvenu au pouvoir lors du coup d'État du 18 brumaire, Napoléon Bonaparte affirme clore la Révolution en en pérennisant les conquêtes fondamentales. En coulant dans le bronze administratif les « masses de granit », il modernise la France avant de transformer le régime en un Empire dynastique conquérant qui remodèle l'Europe jusqu'à la défaite de Waterloo.
+      </p>
+    </header>
+
+    <!-- 1. Frise de dates -->
+    <section class="timeline-strip" aria-label="Frise chronologique de la période 1799-1815">
+      <div class="timeline-header">
+        <h2 class="timeline-title"><span>⏳</span> Frise chronologique (1799 - 1815)</h2>
+        <span style="font-size: 0.85rem; color: var(--text-subtle);">L'épopée consulaire et impériale</span>
+      </div>
+      <div class="timeline-track">
+        <div class="timeline-step">
+          <div class="timeline-date">Nov. 1799</div>
+          <div class="timeline-desc">Coup d'État du 18 brumaire (Consulat)</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">1800</div>
+          <div class="timeline-desc">Création des préfets & Banque de France</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">1801</div>
+          <div class="timeline-desc">Signature du Concordat avec Pie VII</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">1802</div>
+          <div class="timeline-desc">Lycées, Légion d'honneur, consulat à vie</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">21 mars 1804</div>
+          <div class="timeline-desc">Promulgation du Code civil</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">2 déc. 1804</div>
+          <div class="timeline-desc">Sacre de Napoléon Ier à Notre-Dame</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">2 déc. 1805</div>
+          <div class="timeline-desc">Victoire éclatante d'Austerlitz</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-date">18 juin 1815</div>
+          <div class="timeline-desc">Défaite définitive de Waterloo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lecteur audio avec transcription repliable -->
+    <section class="audio-station" aria-label="Podcast de cours Période 4">
+      <div class="audio-header">
+        <div class="audio-info">
+          <div class="audio-icon-box" aria-hidden="true">🎙️</div>
+          <div>
+            <h2 class="audio-title">Le Podcast du Chapitre : P4 (1799-1815)</h2>
+            <p class="audio-subtitle">Écoute active • Synthèse orale complète du cours (22 min 14)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="audio-controls-row">
+        <button type="button" class="play-toggle-btn" aria-label="Écouter le podcast">▶</button>
+        <button type="button" class="speed-toggle-btn" aria-label="Vitesse de lecture 1x">1×</button>
+        <div class="audio-scrubber-box">
+          <span class="time-display current-time">00:00</span>
+          <div class="progress-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <span class="time-display duration-time">22:14</span>
+        </div>
+      </div>
+
+      <audio preload="none" data-audio-file="assets/mp3/p4.mp3" controls class="audio-native">
+        Votre navigateur ne prend pas en charge la balise audio.
+      </audio>
+
+      <button type="button" class="transcription-toggle" aria-expanded="false">
+        <span>📜 Afficher la transcription textuelle intégrale du podcast</span>
+        <span class="toggle-icon">▼</span>
+      </button>
+
+      <div class="transcription-body">
+        <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Transcription intégrale du cours oral :</h3>
+        <p>
+          « Pour clore notre parcours révision, nous entrons dans le moment napoléonien. Parvenu au pouvoir à la faveur du 18 brumaire, Bonaparte déclare : "La Révolution est fixée aux principes qui l'ont commencée : elle est finie". Son premier défi est de stabiliser la nation tout en préservant les acquis majeurs de 1789. Il jette sur le sol de France ce qu'il nomme les "masses de granit" : la création du corps préfectoral pour centraliser l'État, la fondation de la Banque de France et du franc germinal pour assurer la prospérité économique, le Concordat de 1801 pour ramener la paix religieuse, et l'immense monument juridique du Code civil en 1804.
+        </p>
+        <p style="margin-top: 0.5rem;">
+          Cependant, le régime glisse rapidement vers un autoritarisme monarchique. Le 2 décembre 1804, Bonaparte se fait sacrer empereur sous le nom de Napoléon Ier. La presse est muselée, les opposants surveillés par la police de Fouché. À l'extérieur, la Grande Armée enchaîne les victoires légendaires, comme à Austerlitz en 1805, diffusant le Code civil et l'abolition de la féodalité à travers toute l'Europe. Mais les pillages et la conscription réveillent les sentiments nationaux des peuples opprimés, notamment en Espagne et en Allemagne. Après la terrible retraite de Russie en 1812 et la défaite de Waterloo en 1815, l'Empire s'effondre, mais les idées de liberté et de souveraineté nationale sont désormais semées pour tout le XIXe siècle. »
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Question guide + 3 idées clés (carte mentale) -->
+    <section class="study-section">
+      <div class="guide-banner">
+        <div class="guide-label">Problématique directrice du chapitre</div>
+        <p class="guide-question">
+          En quoi le régime napoléonien parachève-t-il certains acquis révolutionnaires tout en instaurant un régime autoritaire et impérial ?
+        </p>
+      </div>
+
+      <div class="key-ideas-grid">
+        <div class="idea-card">
+          <div class="idea-number">1</div>
+          <h3 class="idea-title">La stabilisation par les « masses de granit »</h3>
+          <p class="idea-body">
+            Bonaparte réconcilie les Français déchirés par dix ans de guerre civile. Il consolide l'égalité civile et la propriété par le <strong>Code civil (1804)</strong>, pacifie la question religieuse par le <strong>Concordat (1801)</strong> et unifie l'administration grâce aux <strong>préfets</strong> et au <strong>franc germinal</strong>.
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">2</div>
+          <h3 class="idea-title">L'affirmation d'un pouvoir autoritaire impérial</h3>
+          <p class="idea-body">
+            Sous le vernis du suffrage universel détourné par le <strong>plébiscite</strong>, Napoléon concentre la totalité du pouvoir exécutif et musèle l'opposition. Le sacre du 2 décembre 1804 fonde une nouvelle <strong>noblesse d'Empire</strong> héréditaire sans privilèges fiscaux.
+          </p>
+        </div>
+        <div class="idea-card">
+          <div class="idea-number">3</div>
+          <h3 class="idea-title">L'Europe napoléonienne et l'éveil national</h3>
+          <p class="idea-body">
+            Par ses conquêtes, la France exporte les principes révolutionnaires (fin du servage, égalité juridique). Mais l'occupation militaire, la conscription et le <strong>Blocus continental</strong> provoquent en retour le réveil du <strong>sentiment national</strong> anti-français (guerilla espagnole, soulèvement allemand).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Schéma heuristique Mermaid -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🧭</span> Schéma heuristique de la période (1799-1815)</h2>
+        <span class="section-pill">Mermaid Diagram</span>
+      </div>
+
+      <div class="mermaid-card">
+        <div class="mermaid-meta">
+          <span style="font-weight: 700; color: var(--text-main);">Dynamique : Du coup d'État du 18 brumaire à la chute finale de l'Empire</span>
+          <span class="mermaid-hint">🔍 Explorez la double dimension de modernisation intérieure et d'expansion militaire</span>
+        </div>
+        <div class="mermaid-box">
+          <pre class="mermaid">
+flowchart TD
+    subgraph PriseDuPouvoir["1. Coup d'État & Ordre consulaire (1799-1804)"]
+        B1["18-19 brumaire an VIII : Bonaparte Premier Consul"]
+        B2["Centralisation administrative : création des préfets (1800)"]
+        B3["Pacification religieuse : Concordat de 1801 avec Pie VII"]
+        B4["Modernisation durable : Franc germinal, Banque de France, Lycées"]
+        B5["Code civil des Français (1804) : égalité civile & protection des biens"]
+    end
+
+    subgraph GrandEmpire["2. L'Empire conquérant & l'apogée européen (1804-1811)"]
+        E1["2 décembre 1804 : Sacre impérial de Napoléon Ier"]
+        E2["Autoritarisme intérieur : censure de la presse, police politique"]
+        E3["2 décembre 1805 : Triomphe d'Austerlitz face aux Austro-Russes"]
+        E4["Europe vassalisée : Royaumes frères, Blocus continental contre l'Angleterre"]
+        E5["Diffusion du Code civil & abolition de la féodalité en Europe"]
+    end
+
+    subgraph ChuteImperiale["3. Éveil des nationalismes & effondrement (1812-1815)"]
+        F1["Résistance nationale des peuples occupés (Espagne, Allemagne)"]
+        F2["1812 : Retraite désastreuse de Russie (perte de la Grande Armée)"]
+        F3["1814 : Campagne de France, première abdication & exil à l'île d'Elbe"]
+        F4["1815 : Les Cent-Jours & défaite ultime de Waterloo (18 juin)"]
+        F5["Congrès de Vienne : Restauration monarchique mais idéaux révolutionnaires ancrés"]
+    end
+
+    PriseDuPouvoir --> GrandEmpire
+    GrandEmpire --> ChuteImperiale
+          </pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Tableau synthétique -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>📊</span> Tableau synthétique des événements clés</h2>
+        <span class="section-pill">Repères du Bac</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th style="width: 15%;">Date</th>
+              <th style="width: 25%;">Événement</th>
+              <th style="width: 25%;">Acteurs majeurs</th>
+              <th style="width: 35%;">Portée historique & Notion clé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="strong-cell">9-10 nov. 1799</td>
+              <td><strong>Coup d'État du 18 brumaire</strong></td>
+              <td>Napoléon Bonaparte, Lucien Bonaparte, Sieyès, Ducos</td>
+              <td><span class="tag-badge tag-politique">Fin du Directoire</span> Naissance du régime du Consulat. Bonaparte s'impose comme Premier Consul et détient la réalité du pouvoir.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">15 juillet 1801</td>
+              <td><strong>Signature du Concordat</strong></td>
+              <td>Bonaparte, pape Pie VII, cardinal Consalvi</td>
+              <td><span class="tag-badge tag-social">Paix religieuse</span> Fin du schisme entre prêtres jureurs et réfractaires. Le catholicisme est reconnu comme religion de la majorité des Français.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">21 mars 1804</td>
+              <td><strong>Promulgation du Code civil</strong></td>
+              <td>Bonaparte, juristes Portalis, Tronchet, Bigot de Préameneu</td>
+              <td><span class="tag-badge tag-institution">Monument juridique</span> Synthèse du droit romain écrit et des coutumes. Égalité devant la loi, primauté du contrat et sacralisation de la propriété privée.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">2 décembre 1804</td>
+              <td><strong>Sacre de Napoléon Ier</strong></td>
+              <td>Napoléon, Joséphine, pape Pie VII, cour impériale</td>
+              <td><span class="tag-badge tag-politique">Dynastie impériale</span> Napoléon s'auto-couronne à Notre-Dame de Paris. Fondation du Premier Empire héréditaire.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">2 décembre 1805</td>
+              <td><strong>Bataille d'Austerlitz</strong></td>
+              <td>Napoléon Ier, tsar Alexandre Ier, empereur François II</td>
+              <td><span class="tag-badge tag-guerre">Chef-d'œuvre tactique</span> Défaite écrasante de la 3ème coalition. Fin du Saint-Empire romain germanique et hégémonie française sur le continent.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">18 juin 1815</td>
+              <td><strong>Bataille de Waterloo</strong></td>
+              <td>Napoléon Ier, duc de Wellington (Royaume-Uni), Blücher (Prusse)</td>
+              <td><span class="tag-badge tag-guerre">Chute finale</span> Défaite définitive des Cent-Jours. Seconde abdication et déportation de Napoléon à Sainte-Hélène.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Tableau comparatif : Consulat vs Empire -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>⚖️</span> Tableau comparatif : Le Consulat (1799-1804) vs L'Empire (1804-1815)</h2>
+        <span class="section-pill">Évolution du pouvoir</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th style="width: 20%;">Critère d'analyse</th>
+              <th style="width: 40%;">Le Consulat (1799 - 1804)</th>
+              <th style="width: 40%;">Le Premier Empire (1804 - 1815)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="strong-cell">Nature du régime & Titre</td>
+              <td><strong>République consulaire</strong> : Pouvoir confié en théorie à trois consuls, mais le Premier Consul Bonaparte possède l'initiative exclusive des lois et nomme ministres et fonctionnaires.</td>
+              <td><strong>Monarchie impériale héréditaire</strong> : Napoléon devient « Empereur des Français » par la grâce de Dieu et les constitutions de la République. Dynastie des Bonaparte.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Fonctionnement des Assemblées</td>
+              <td>Quatre assemblées affaiblies (Conseil d'État, Tribunat, Corps législatif, Sénat conservateur) qui ne peuvent débattre et voter simultanément.</td>
+              <td>Le Tribunat critique est supprimé en 1807 ; le Corps législatif est réduit à une chambre d'enregistrement servile des volontés de l'Empereur.</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Libertés publiques & Société</td>
+              <td>Retour de la paix civile, amnistie des émigrés royalistes, réorganisation des tribunaux. Libertés d'opinion sous surveillance modérée.</td>
+              <td>Censure stricte de la presse (4 journaux autorisés à Paris), surveillance policière omniprésente (Fouché), rétablissement des prisons d'État (1810).</td>
+            </tr>
+            <tr>
+              <td class="strong-cell">Élite & Distinctions</td>
+              <td>Fondation de la <strong>Légion d'honneur (1802)</strong> récompensant le mérite civique et militaire sans distinction d'ordre ni de naissance.</td>
+              <td>Création de la <strong>noblesse d'Empire (1808)</strong> : titres attachés à des majorats et dotations, recréant une hiérarchie honorifique de cour.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. Galerie d'images & Document à commenter -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>🖼️</span> Galerie historique : La propagande impériale</h2>
+        <span class="section-pill">Documents iconographiques</span>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Image 1 : Le Sacre de Napoléon -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/sacre_napoleon.webp" alt="Le Sacre de Napoléon Ier par Jacques-Louis David" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <h3 class="art-title">Le Sacre de Napoléon Ier (2 décembre 1804)</h3>
+            <p class="art-artist">Jacques-Louis David (1748-1825), huile sur toile monumentale, 1805-1807.</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+              Premier peintre de l'Empereur, David dépeint le moment où Napoléon couronne Joséphine sous la bénédiction résignée du pape Pie VII, alliant légitimité romaine et fastes monarchiques.
+            </p>
+            <div class="art-meta">
+              <span>Musée du Louvre (Paris)</span>
+              <span class="art-license">Domaine Public</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image 2 : Austerlitz -->
+        <article class="art-card">
+          <div class="art-img-box">
+            <img src="./assets/img/bataille_austerlitz.webp" alt="La bataille d'Austerlitz peinte par François Gérard" class="art-img" loading="lazy">
+          </div>
+          <div class="art-caption">
+            <h3 class="art-title">La bataille d'Austerlitz (2 décembre 1805)</h3>
+            <p class="art-artist">François Gérard (1770-1837), huile sur toile, 1810.</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+              Le général Rapp présente à l'Empereur les étendards pris à la garde impériale russe sur le plateau de Pratzen. L'œuvre glorifie le génie stratégique du souverain victorieux.
+            </p>
+            <div class="art-meta">
+              <span>Galerie des Batailles (Versailles)</span>
+              <span class="art-license">Domaine Public</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Document court à commenter type Bac -->
+      <div class="document-card">
+        <span class="doc-badge">Document d'époque à commenter • Type Bac</span>
+        <h3 class="doc-title">Le Code civil des Français (Extraits des articles de 1804)</h3>
+        <p class="doc-source">Promulgué par la loi du 30 ventôse an XII (21 mars 1804).</p>
+
+        <div class="doc-quote-box">
+          <p>« <strong>Article 8.</strong> Tout Français jouira des droits civils.</p>
+          <p style="margin-top: 0.5rem;"><strong>Article 213.</strong> Le mari doit protection à sa femme, la femme obéissance à son mari.</p>
+          <p style="margin-top: 0.5rem;"><strong>Article 214.</strong> La femme est obligée d'habiter avec le mari, et de le suivre partout où il juge à propos de résider [...] ;</p>
+          <p style="margin-top: 0.5rem;"><strong>Article 544.</strong> La propriété est le droit de jouir et disposer des choses de la manière la plus absolue, pourvu qu'on n'en fasse pas un usage prohibé par les lois ou par les règlements.</p>
+          <p style="margin-top: 0.5rem;"><strong>Article 1134.</strong> Les conventions légalement formées tiennent lieu de loi à ceux qui les ont faites. »</p>
+        </div>
+
+        <div class="doc-prompts">
+          <h4>Consigne d'analyse type épreuve commune du Baccalauréat :</h4>
+          <ol>
+            <li>En confrontant les articles 8, 544 et 1134, montrez comment le Code civil consacre les principes économiques et civils issus de la Révolution de 1789.</li>
+            <li>À l'aide des articles 213 et 214, expliquez quelle conception de la famille et du statut de la femme le régime napoléonien met en place.</li>
+            <li>En conclusion, évaluez la portée historique de ce texte en France et dans l'Europe sous domination napoléonienne.</li>
+          </ol>
+        </div>
+
+        <button type="button" class="doc-corrige-toggle" aria-expanded="false">
+          <span class="corrige-arrow">▼ Afficher</span> les pistes de correction et conseils méthodologiques
+        </button>
+        <div class="doc-corrige-content">
+          <p><strong>Pistes de réponse & Éléments de valorisation :</strong></p>
+          <ul style="padding-left: 1.25rem; margin-top: 0.5rem; line-height: 1.6;">
+            <li><strong>Pérennisation des acquis de 1789 :</strong> L'article 8 garantit l'égalité civile sans distinction de privilèges de naissance. L'article 544 fait de la propriété individuelle un droit inviolable et sacré, rassurant la bourgeoisie acquéreuse de biens nationaux. L'article 1134 consacre la liberté contractuelle libérale.</li>
+            <li><strong>Modèle patriarcal et régression pour les femmes :</strong> Les articles 213 et 214 consacrent l'infériorité juridique de la femme mariée, considérée comme une éternelle mineure soumise à la tutelle maritale (incapacité de gérer ses biens, de travailler ou de voyager sans accord du mari). Le Code tourne le dos aux avancées égalitaires de 1792 (loi sur le divorce par consentement mutuel restreinte, disparition de l'égalité successorale parfaite).</li>
+            <li><strong>Portée immense en France et en Europe :</strong> Le Code unifie durablement le droit en éliminant les 300 coutumes locales d'Ancien Régime. Exporté dans les royaumes vassaux (Italie, Rhénanie, Belgique, Pologne), il y détruit les structures féodales et sert encore aujourd'hui de matrice au droit civil contemporain.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Quiz de 5 questions (intégré via JS) -->
+    <section class="study-section" id="page-quiz" aria-label="Quiz interactif de révision">
+      <!-- Le module JS quiz.js injectera ici les 5 questions avec scoring immédiat -->
+    </section>
+
+    <!-- Lexique interactif du Chapitre -->
+    <section class="study-section">
+      <div class="section-head">
+        <h2 class="section-title"><span>📖</span> Lexique notionnel du chapitre (1799-1815)</h2>
+        <span class="section-pill">Vocabulaire Bac</span>
+      </div>
+
+      <div style="margin-bottom: 1.25rem;">
+        <input type="search" id="lexique-search" placeholder="🔍 Rechercher un concept (ex : Préfet, Concordat, Code civil...)" style="width: 100%; max-width: 400px; padding: 0.6rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); background: var(--bg-card); color: var(--text-main); font-size: 0.95rem;">
+      </div>
+
+      <div class="lexique-grid">
+        <div class="lexique-item">
+          <h3 class="lexique-term">Masses de granit</h3>
+          <p class="lexique-def">Expression de Bonaparte désignant les institutions solides et pérennes destinées à stabiliser la société française (Code civil, préfets, franc germinal, lycées, Légion d'honneur, Banque de France).</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Code civil (1804)</h3>
+          <p class="lexique-def">Recueil de lois unifiant le droit des personnes et des biens, confirmant l'égalité civile, la propriété privée et l'autorité paternelle.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Concordat (1801)</h3>
+          <p class="lexique-def">Traité signé entre Bonaparte et le pape Pie VII restaurant la paix religieuse en France tout en plaçant l'Église sous le contrôle financier et administratif de l'État.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Préfet</h3>
+          <p class="lexique-def">Haut fonctionnaire nommé par le pouvoir central à la tête de chaque département à partir de 1800, chargé de relayer l'autorité et les décrets du gouvernement.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Plébiscite</h3>
+          <p class="lexique-def">Consultation directe des citoyens par laquelle le pouvoir exécutif leur demande d'approuver une décision ou une révision constitutionnelle par « oui » ou par « non ».</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Blocus continental</h3>
+          <p class="lexique-def">Décret de Berlin (1806) interdisant tout commerce entre le continent européen dominé par la France et le Royaume-Uni afin d'asphyxier l'économie britannique.</p>
+        </div>
+        <div class="lexique-item">
+          <h3 class="lexique-term">Sentiment national</h3>
+          <p class="lexique-def">Prise de conscience par une communauté humaine d'appartenir à une même nation unie par une histoire, une langue et une culture, souvent éveillée contre la domination napoléonienne.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination entre chapitres -->
+    <nav class="pager-nav" aria-label="Pagination des chapitres">
+      <a href="p3.html" class="pager-btn">← Chapitre précédent : P3 (1793-1799)</a>
+      <a href="index.html" class="pager-btn primary">Retour au Hub général de révision →</a>
+    </nav>
+  </main>
+
+  <!-- Modale Image Lightbox -->
+  <div class="modal-overlay" id="image-modal" role="dialog" aria-modal="true" aria-label="Visualisation de l'œuvre d'art">
+    <button type="button" class="modal-close-btn" aria-label="Fermer la vue plein écran">✕</button>
+    <div class="modal-content">
+      <img src="" alt="" class="modal-img">
+      <div class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div>
+        <strong>RevoRevis</strong> — Site de révision d'Histoire Première générale.
+        <br><span style="font-size: 0.8rem; color: var(--text-subtle);">Thème 1, Chapitre 1 : La Révolution française et l'Empire.</span>
+      </div>
+      <div class="footer-links">
+        <a href="credits.json" class="footer-link" target="_blank" rel="noopener">Crédits scientifiques & Licences</a>
+        <a href="https://github.com/letoalan/RevoRevis" class="footer-link" target="_blank" rel="noopener">Code source GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initQuiz } from './src/main.js';
+    import { quizData } from './src/quiz-data.js';
+    initQuiz(quizData.p4, '#page-quiz');
+  </script>
+</body>
+</html>
