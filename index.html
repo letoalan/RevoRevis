@@ -56,6 +56,7 @@
         <span class="period-badge">Programme officiel de Première</span>
         <span class="level-tag">Thème 1 • Chapitre 1</span>
         <span class="level-tag">Épreuve du Baccalauréat</span>
+        <a href="#quiz-global-section" class="level-tag" style="text-decoration: none; background: var(--color-primary-soft); color: var(--color-primary); font-weight: 700; border: 1px solid var(--color-primary);" title="Accéder directement au quiz de 20 questions">📝 Grand Quiz (20 questions)</a>
       </div>
       <h1 class="page-title">La Révolution française et l'Empire : une nouvelle conception de la nation</h1>
       <p class="page-lead">
@@ -224,22 +225,75 @@
 
       <div class="mermaid-card">
         <div class="mermaid-meta">
-          <span style="font-weight: 700; color: var(--text-main);">Vue synoptique de la dynamique révolutionnaire et impériale</span>
-          <span class="mermaid-hint">🔍 Schéma interactif généré dynamiquement</span>
+          <div class="mermaid-title-area">
+            <span class="mermaid-title-text">Dynamique générale de la période révolutionnaire et impériale (1789-1815)</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="mermaid-toolbar" role="toolbar" aria-label="Outils d'affichage du schéma">
+              <button type="button" class="mermaid-tool-btn btn-zoom-in" title="Agrandir (+)">＋</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-out" title="Réduire (-)">－</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-reset" title="Réinitialiser l'affichage">⟲</button>
+              <button type="button" class="mermaid-tool-btn btn-fullscreen" title="Plein écran">⛶</button>
+            </div>
+            <span class="mermaid-hint">🔍 Cliquez sur les blocs pour accéder au cours</span>
+          </div>
         </div>
+
+        <!-- Légende unifiée -->
+        <div class="mermaid-legend">
+          <span class="legend-title">Légende :</span>
+          <span class="legend-pill genesis">🔵 P1 (1789-1791)</span>
+          <span class="legend-pill crisis">🔴 P2 (1791-1792)</span>
+          <span class="legend-pill pivot">🟣 P3 (1793-1799)</span>
+          <span class="legend-pill result">🟡 P4 (1799-1815)</span>
+        </div>
+
         <div class="mermaid-box">
           <pre class="mermaid">
-flowchart LR
-    A["Ancien Régime en crise (1789)"] --> B["1789-1791 : Affirmation de la souveraineté nationale"]
-    B --> C["1791-1792 : Rupture monarchique & Guerre"]
-    C --> D["1793-1794 : République montagnarde & Terreur"]
-    D --> E["1795-1799 : Directoire républicain censitaire"]
-    E --> F["1799-1804 : Consulat & Masses de granit"]
-    F --> G["1804-1815 : Empire napoléonien & Conflits européens"]
-    G --> H["1815 : Congrès de Vienne & Héritage des libertés"]
+flowchart TD
+    classDef genesis fill:#eff6ff,stroke:#2563eb,stroke-width:2.5px,color:#1e3a8a;
+    classDef crisis fill:#fef2f2,stroke:#dc2626,stroke-width:2.5px,color:#991b1b;
+    classDef pivot fill:#f5f3ff,stroke:#7c3aed,stroke-width:2.5px,color:#581c87;
+    classDef result fill:#fffbeb,stroke:#d97706,stroke-width:2.5px,color:#92400e;
+
+    START(["👑 MAI 1789 : Crise globale de l'Ancien Régime<br><b>Déficit financier massif • Blocage des trois ordres • Disette et colère populaire</b>"]):::genesis
+
+    P1["🏛️ <b>PÉRIODE 1 (1789-1791) : L'AFFIRMATION NATIONALE</b><br>• 20 juin 1789 : Serment du Jeu de paume ➔ La souveraineté passe à la Nation<br>• 14 juillet 1789 : Prise de la Bastille (le peuple parisien en armes)<br>• Nuit du 4 août & DDHC : Abolition des privilèges féodaux & Droits naturels<br>• 1790-1791 : Unification en 83 départements & Constitution de 1791"]:::genesis
+
+    P2["⚔️ <b>PÉRIODE 2 (1791-1792) : GUERRE ET CHUTE DU TRÔNE</b><br>• Juin 1791 : Fuite à Varennes ➔ Rupture définitive de confiance avec le Roi<br>• Avril 1792 : Déclaration de guerre européenne & 'La Patrie en danger'<br>• 10 août 1792 : Prise des Tuileries par les sans-culottes ➔ Chute de la monarchie<br>• 20-22 sept. 1792 : Victoire de Valmy & Proclamation de la Première République"]:::crisis
+
+    P3["⚡ <b>PÉRIODE 3 (1793-1799) : LA RÉPUBLIQUE DANS LA TOURMENTE</b><br>• Printemps 1793 : Périls mortels (Coalition européenne + Guerre de Vendée + Fédéralisme)<br>• 1793-1794 : Gouvernement révolutionnaire & Terreur (Robespierre • Salut public)<br>• Juillet 1794 : 9 thermidor (chute de Robespierre et fin de la Terreur)<br>• 1795-1799 : Le Directoire (république censitaire bourgeoise instable)"]:::pivot
+
+    P4["🦅 <b>PÉRIODE 4 (1799-1815) : L'ORDRE NAPOLÉONIEN</b><br>• Nov. 1799 : Coup d'État du 18 brumaire ➔ Bonaparte Premier Consul<br>• 1800-1804 : Les 'Masses de granit' (Code civil • Concordat • Préfets • Franc germinal)<br>• Déc. 1804 : Sacre impérial de Napoléon Ier & Victoires éclatantes (Austerlitz)<br>• 1812-1815 : Campagne de Russie, défaite de Waterloo & Congrès de Vienne"]:::result
+
+    BILAN(["🌍 <b>BILAN HISTORIQUE (1815) : UNE NOUVELLE CONCEPTION DE LA NATION</b><br><b>Égalité civile devant la loi • Diffusion du Code civil • Éveil irrésistible des sentiments nationaux</b>"]):::result
+
+    START -->|Juin 1789 : Fin de l'absolutisme| P1
+    P1 -->|Juin 1791 : Défiance royale & Avril 1792 : Guerre| P2
+    P2 -->|Septembre 1792 : Abolition de la royauté| P3
+    P3 -->|Novembre 1799 : Recours au sabre militaire| P4
+    P4 -->|1815 : Héritage contemporain| BILAN
+
+    click P1 href "p1.html" "Consulter le cours P1 (1789-1791)"
+    click P2 href "p2.html" "Consulter le cours P2 (1791-1792)"
+    click P3 href "p3.html" "Consulter le cours P3 (1793-1799)"
+    click P4 href "p4.html" "Consulter le cours P4 (1799-1815)"
           </pre>
         </div>
       </div>
+    </section>
+
+    <!-- Grand Quiz de Synthèse Global du Chapitre (20 questions) -->
+    <section class="study-section" id="quiz-global-section" aria-label="Grand Quiz de synthèse global du chapitre">
+      <div class="section-head">
+        <h2 class="section-title"><span>📝</span> Grand Quiz de synthèse du chapitre (1789-1815)</h2>
+        <span class="section-pill">20 questions • Bac Première</span>
+      </div>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+        Testez l'ensemble de vos connaissances sur les 4 périodes du programme officiel (1789 à 1815). L'ordre des 4 réponses est aléatoire à chaque essai et toutes les propositions sont rigoureusement équilibrées en longueur.
+      </p>
+
+      <div id="intro-quiz"></div>
     </section>
   </main>
 
@@ -266,6 +320,16 @@ flowchart LR
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script type="module">
+    import './src/main.js';
+    import { initQuiz } from './src/quiz.js';
+    import { quizData } from './src/quiz-data.js';
+
+    initQuiz(quizData.quizGlobal, '#intro-quiz', {
+      title: 'Grand Quiz de synthèse du chapitre (20 questions)',
+      badge: 'Auto-évaluation globale • Bac Première',
+      shuffleOptions: true
+    });
+  </script>
 </body>
 </html>

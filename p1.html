@@ -193,37 +193,66 @@
 
       <div class="mermaid-card">
         <div class="mermaid-meta">
-          <span style="font-weight: 700; color: var(--text-main);">Dynamique : Causes structurelles ➔ Événements déclencheurs ➔ Conséquences durables</span>
-          <span class="mermaid-hint">🔍 Cliquez / survolez pour analyser l'enchaînement causal</span>
+          <div class="mermaid-title-area">
+            <span class="mermaid-title-text">Enchaînement causal : De la crise d'Ancien Régime à la Constitution de 1791</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="mermaid-toolbar" role="toolbar" aria-label="Outils d'affichage du schéma">
+              <button type="button" class="mermaid-tool-btn btn-zoom-in" title="Agrandir (+)">＋</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-out" title="Réduire (-)">－</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-reset" title="Réinitialiser l'affichage">⟲</button>
+              <button type="button" class="mermaid-tool-btn btn-fullscreen" title="Plein écran">⛶</button>
+            </div>
+            <span class="mermaid-hint">🔍 Schéma interactif avec zoom</span>
+          </div>
         </div>
+
+        <!-- Légende unifiée -->
+        <div class="mermaid-legend">
+          <span class="legend-title">Légende :</span>
+          <span class="legend-pill genesis">🔵 Origines & Crises</span>
+          <span class="legend-pill crisis">🔴 Ruptures révolutionnaires</span>
+          <span class="legend-pill result">🟡 Refondation & Lois</span>
+          <span class="legend-pill pivot">🟣 Fractures & Impasse</span>
+        </div>
+
         <div class="mermaid-box">
           <pre class="mermaid">
 flowchart TD
-    subgraph Causes["1. Causes profondes de la crise (avant 1789)"]
-        C1["Crise financière aiguë : déficit budgétaire massif"]
-        C2["Blocage de la société d'ordres & refus des réformes par les nobles"]
-        C3["Crise agricole et frumentaire : flambée du prix du pain"]
-        C4["Diffusion des idéaux des Lumières & exemple américain"]
+    classDef genesis fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a8a;
+    classDef crisis fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#991b1b;
+    classDef result fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#92400e;
+    classDef pivot fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#581c87;
+
+    subgraph Act1["1. Origines : L'Ancien Régime en crise (avant 1789)"]
+        C1["Déficit financier aigu & dette publique"]:::genesis
+        C2["Blocage des ordres & refus des réformes fiscales"]:::genesis
+        C3["Crise frumentaire : hausse brutale du prix du pain"]:::genesis
     end
 
-    subgraph Evenements["2. La Révolution de l'été 1789"]
-        E1["5 mai : États généraux bloqués sur le vote par tête"]
-        E2["17-20 juin : Assemblée nationale & Serment du Jeu de paume"]
-        E3["14 juillet : Prise populaire de la Bastille"]
-        E4["Fin juillet : Grande Peur dans les campagnes"]
-        E5["4 août : Abolition des privilèges féodaux"]
-        E6["26 août : Déclaration des droits de l'homme (DDHC)"]
+    subgraph Act2["2. La Rupture révolutionnaire (Été 1789)"]
+        E1["5 mai 1789 : Ouverture des États généraux<br>Conflit sur le vote par tête"]:::genesis
+        E2["20 juin 1789 : Serment du Jeu de paume<br>Naissance de l'Assemblée nationale"]:::crisis
+        E3["14 juillet 1789 : Prise de la Bastille<br>Le peuple parisien sauve l'Assemblée"]:::crisis
+        E4["Nuit du 4 août & 26 août : Nuit du 4 août & DDHC<br>Abolition des privilèges • Droits naturels"]:::result
     end
 
-    subgraph Consequences["3. La réorganisation nationale & ses fractures (1790-1791)"]
-        K1["Constitution de 1791 : Séparation des pouvoirs & Suffrage censitaire"]
-        K2["Réformes administratives : 83 départements, état civil laïcisé"]
-        K3["Constitution civile du clergé (juillet 1790) : schisme religieux"]
-        K4["Fuite à Varennes (juin 1791) : rupture définitive de la confiance"]
+    subgraph Act3["3. La Refondation nationale & les fractures (1790-1791)"]
+        K1["Réformes territoriales & fiscales<br>83 départements • Vente des biens nationaux"]:::result
+        K2["Juillet 1790 : Constitution civile du clergé<br>Schisme avec les prêtres réfractaires"]:::pivot
+        K3["Septembre 1791 : Constitution de 1791<br>Monarchie constitutionnelle • Suffrage censitaire"]:::result
+        K4["20-21 juin 1791 : Fuite à Varennes<br>Rupture du pacte de confiance avec le Roi"]:::pivot
     end
 
-    Causes --> Evenements
-    Evenements --> Consequences
+    C1 & C2 & C3 --> E1
+    E1 --> E2
+    E2 --> E3
+    E3 --> E4
+    E4 --> K1
+    E4 --> K2
+    K1 & K2 --> K3
+    K2 --> K4
+    K4 -->|Accélération vers la crise républicaine| NEXT(["➔ Vers la guerre et la chute de la royauté (1792)"]):::crisis
           </pre>
         </div>
       </div>

@@ -192,37 +192,67 @@
 
       <div class="mermaid-card">
         <div class="mermaid-meta">
-          <span style="font-weight: 700; color: var(--text-main);">Dynamique : Périls existentiels ➔ Gouvernement de Terreur ➔ Réaction thermidorienne & Directoire</span>
-          <span class="mermaid-hint">🔍 Explorez l'enchaînement de la dictature de salut public</span>
+          <div class="mermaid-title-area">
+            <span class="mermaid-title-text">Engrenage d'exception : Des périls de 1793 à la stabilisation thermidorienne</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="mermaid-toolbar" role="toolbar" aria-label="Outils d'affichage du schéma">
+              <button type="button" class="mermaid-tool-btn btn-zoom-in" title="Agrandir (+)">＋</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-out" title="Réduire (-)">－</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-reset" title="Réinitialiser l'affichage">⟲</button>
+              <button type="button" class="mermaid-tool-btn btn-fullscreen" title="Plein écran">⛶</button>
+            </div>
+            <span class="mermaid-hint">🔍 Schéma interactif avec zoom</span>
+          </div>
         </div>
+
+        <!-- Légende unifiée -->
+        <div class="mermaid-legend">
+          <span class="legend-title">Légende :</span>
+          <span class="legend-pill genesis">🔵 Périls & Menaces</span>
+          <span class="legend-pill crisis">🔴 Salut public & Terreur</span>
+          <span class="legend-pill pivot">🟣 Crise de Thermidor</span>
+          <span class="legend-pill result">🟡 Directoire bourgeois</span>
+        </div>
+
         <div class="mermaid-box">
           <pre class="mermaid">
 flowchart TD
-    subgraph Menaces1793["1. La République encerclée (Printemps 1793)"]
-        T1["Première coalition européenne aux frontières (Prusse, Autriche, Angleterre, Espagne)"]
-        T2["Guerre civile de Vendée (insurrection paysanne et catholique)"]
-        T3["Révoltes fédéralistes en province (Lyon, Toulon, Marseille, Bordeaux)"]
-        T4["Effondrement de l'assignat & disette dans les villes"]
+    classDef genesis fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a8a;
+    classDef crisis fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#991b1b;
+    classDef pivot fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#581c87;
+    classDef result fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#92400e;
+
+    subgraph Act1["1. La République encerclée de toutes parts (1793)"]
+        T1["Janvier 1793 : Mort de Louis XVI ➔ 1ère Coalition européenne"]:::genesis
+        T2["Mars 1793 : Soulèvement vendéen catholique & royaliste"]:::genesis
+        T3["Juin 1793 : Chute des Girondins ➔ Révoltes fédéralistes"]:::genesis
+        T4["Inflation galopante de l'assignat & famine urbaine"]:::genesis
     end
 
-    subgraph SalutPublic["2. Le Gouvernement révolutionnaire et la Terreur (1793-1794)"]
-        S1["Suspension des libertés : gouvernement 'révolutionnaire jusqu'à la paix'"]
-        S2["Comité de salut public (Robespierre, Saint-Just) & Comité de sûreté générale"]
-        S3["Loi des suspects & Tribunal révolutionnaire (plus de 40 000 exécutés)"]
-        S4["Levée en masse (1 million de soldats) & loi du Maximum général sur les prix"]
-        S5["Déchristianisation & nouveau calendrier républicain"]
+    subgraph Act2["2. Le Gouvernement révolutionnaire de l'an II (1793-1794)"]
+        S1["Comité de salut public (Robespierre, Saint-Just)<br>Centralisation absolue du pouvoir exécutif"]:::crisis
+        S2["Levée en masse (1 million d'hommes)<br>Mobilisation économique de guerre"]:::crisis
+        S3["Loi des suspects & Tribunal révolutionnaire<br>Terreur politique • Répression féroce"]:::crisis
+        S4["Loi du Maximum général<br>Blocage des prix du pain & des salaires"]:::crisis
     end
 
-    subgraph SortieDeCrise["3. Thermidor et l'expérience du Directoire (1794-1799)"]
-        D1["Victoire de Fleurus (juin 1794) : la patrie n'est plus en péril immédiat"]
-        D2["9 thermidor an II (27 juillet 1794) : chute et exécution de Robespierre"]
-        D3["Constitution de l'an III (1795) : retour au suffrage censitaire & exécutif à 5 Directeurs"]
-        D4["Instabilité permanente (menaces royalistes à droite, babouvistes à gauche)"]
-        D5["Recours récurrent à l'armée menant au coup d'État du 18 brumaire"]
+    subgraph Act3["3. Thermidor et l'impasse du Directoire (1794-1799)"]
+        D1["26 juin 1794 : Victoire de Fleurus<br>La menace d'invasion étrangère disparaît"]:::pivot
+        D2["9 thermidor an II (27 juillet 1794)<br>Chute et exécution de Robespierre"]:::pivot
+        D3["1795-1799 : Le régime du Directoire<br>Suffrage censitaire des propriétaires • 5 directeurs"]:::result
+        D4["Instabilité politique chronique & corruption<br>Recours croissant aux généraux de l'armée"]:::result
     end
 
-    Menaces1793 --> SalutPublic
-    SalutPublic --> SortieDeCrise
+    T1 & T2 & T3 & T4 --> S1
+    S1 --> S2
+    S1 --> S3
+    S1 --> S4
+    S2 & S3 --> D1
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
+    D4 -->|Appel au sabre militaire| NEXT(["➔ Coup d'État du 18 brumaire : Bonaparte (1799)"]):::result
           </pre>
         </div>
       </div>

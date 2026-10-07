@@ -192,36 +192,67 @@
 
       <div class="mermaid-card">
         <div class="mermaid-meta">
-          <span style="font-weight: 700; color: var(--text-main);">Engrenage fatal : Crise de Varennes ➔ Conflit armé ➔ Insurrection républicaine</span>
-          <span class="mermaid-hint">🔍 Visualisez l'accélération politique vers la République</span>
+          <div class="mermaid-title-area">
+            <span class="mermaid-title-text">Engrenage fatal : De la crise de Varennes à la proclamation de la République</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="mermaid-toolbar" role="toolbar" aria-label="Outils d'affichage du schéma">
+              <button type="button" class="mermaid-tool-btn btn-zoom-in" title="Agrandir (+)">＋</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-out" title="Réduire (-)">－</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-reset" title="Réinitialiser l'affichage">⟲</button>
+              <button type="button" class="mermaid-tool-btn btn-fullscreen" title="Plein écran">⛶</button>
+            </div>
+            <span class="mermaid-hint">🔍 Schéma interactif avec zoom</span>
+          </div>
         </div>
+
+        <!-- Légende unifiée -->
+        <div class="mermaid-legend">
+          <span class="legend-title">Légende :</span>
+          <span class="legend-pill genesis">🔵 Tensions politiques</span>
+          <span class="legend-pill crisis">🔴 Choc militaire & Peur</span>
+          <span class="legend-pill pivot">🟣 Journée insurrectionnelle</span>
+          <span class="legend-pill result">🟡 Fondation républicaine</span>
+        </div>
+
         <div class="mermaid-box">
           <pre class="mermaid">
 flowchart TD
-    subgraph CriseMonarchique["1. Érosion de la confiance royale (1791)"]
-        M1["Juin 1791 : Fuite de la famille royale arrêtée à Varennes"]
-        M2["Juillet 1791 : Pétition républicaine réprimée au Champ-de-Mars"]
-        M3["Automne 1791 : Louis XVI oppose son veto aux décrets de défense"]
+    classDef genesis fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a8a;
+    classDef crisis fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#991b1b;
+    classDef pivot fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#581c87;
+    classDef result fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#92400e;
+
+    subgraph Act1["1. Rupture du pacte monarchique (1791)"]
+        M1["20-21 juin 1791 : Fuite à Varennes<br>Désaveu de la Révolution par Louis XVI"]:::genesis
+        M2["17 juillet 1791 : Fusillade du Champ-de-Mars<br>Rupture entre modérés et patriotes"]:::genesis
+        M3["Automne 1791 : Veto systématique du roi<br>Paralysie des décrets de défense"]:::genesis
     end
 
-    subgraph ChocMilitaire["2. La guerre et la mobilisation populaire (1792)"]
-        G1["20 avril : Déclaration de guerre au 'roi de Bohême et de Hongrie'"]
-        G2["Défaites initiales & désorganisation de l'armée"]
-        G3["11 juillet : Déclaration de 'La Patrie en danger'"]
-        G4["Arrivée des fédérés à Paris (Chant du départ & La Marseillaise)"]
-        G5["25 juillet : Manifeste incendiaire du duc de Brunswick"]
+    subgraph Act2["2. L'embrasement de la Guerre (Avril - Juillet 1792)"]
+        G1["20 avril 1792 : Déclaration de guerre<br>Girondins bellicistes & calcul royal"]:::crisis
+        G2["Défaites initiales & peur du complot<br>Invasion austro-prussienne"]:::crisis
+        G3["11 juillet : 'La Patrie en danger'<br>Arrivée des fédérés provinciaux (Marseillaise)"]:::crisis
+        G4["25 juillet : Manifeste de Brunswick<br>Menace directe d'écraser Paris"]:::crisis
     end
 
-    subgraph ChuteEtFondation["3. La rupture républicaine (août-septembre 1792)"]
-        R1["10 août 1792 : Prise des Tuileries par les sans-culottes & fédérés"]
-        R2["Suspension et emprisonnement de Louis XVI au Temple"]
-        R3["2-6 septembre : Massacres de Septembre dans les prisons parisiennes"]
-        R4["20 septembre : Victoire d'arrêt à Valmy"]
-        R5["21-22 septembre : Abolition de la royauté & Proclamation de la République"]
+    subgraph Act3["3. La Chute du Trône & l'An I Républicain (Août - Sept. 1792)"]
+        R1["10 août 1792 : Prise des Tuileries<br>Sans-culottes & fédérés renversent la royauté"]:::pivot
+        R2["Suspension du roi & emprisonnement au Temple<br>Élection de la Convention au suffrage universel"]:::pivot
+        R3["20 septembre 1792 : Bataille de Valmy<br>Victoire militaire de la nation en armes"]:::result
+        R4["21-22 septembre 1792 : Abolition de la royauté<br>Proclamation de la Première République"]:::result
     end
 
-    CriseMonarchique --> ChocMilitaire
-    ChocMilitaire --> ChuteEtFondation
+    M1 --> M2
+    M2 --> M3
+    M3 --> G1
+    G1 --> G2
+    G2 --> G3
+    G3 & G4 -->|Catalysent la colère populaire| R1
+    R1 --> R2
+    R2 --> R3
+    R3 --> R4
+    R4 -->|Nouvelle ère politique| NEXT(["➔ Vers les épreuves de la Terreur (1793-1794)"]):::result
           </pre>
         </div>
       </div>

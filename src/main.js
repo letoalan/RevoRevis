@@ -63,19 +63,27 @@ async function initMermaid() {
     securityLevel: 'loose',
     theme: currentTheme,
     themeVariables: currentTheme === 'dark' ? {
+      fontFamily: 'Plus Jakarta Sans, sans-serif',
       primaryColor: '#1e3a8a',
       primaryTextColor: '#f8fafc',
       primaryBorderColor: '#60a5fa',
       lineColor: '#93c5fd',
       secondaryColor: '#1e293b',
-      tertiaryColor: '#131d33'
+      tertiaryColor: '#131d33',
+      clusterBkg: '#131d33',
+      clusterBorder: '#334155',
+      mainBkg: '#1e293b'
     } : {
+      fontFamily: 'Plus Jakarta Sans, sans-serif',
       primaryColor: '#eff6ff',
       primaryTextColor: '#0f172a',
       primaryBorderColor: '#1e3a8a',
       lineColor: '#1e3a8a',
       secondaryColor: '#f1f5f9',
-      tertiaryColor: '#ffffff'
+      tertiaryColor: '#ffffff',
+      clusterBkg: '#f8fafc',
+      clusterBorder: '#cbd5e1',
+      mainBkg: '#ffffff'
     },
     flowchart: {
       useMaxWidth: true,
@@ -91,6 +99,44 @@ async function initMermaid() {
   } catch (err) {
     console.error('Mermaid render error:', err);
   }
+
+  initMermaidToolbars();
+}
+
+function initMermaidToolbars() {
+  document.querySelectorAll('.mermaid-card').forEach(card => {
+    if (card.dataset.toolbarInit) return;
+    card.dataset.toolbarInit = 'true';
+
+    const box = card.querySelector('.mermaid-box');
+    if (!box) return;
+
+    let currentScale = 1.0;
+
+    function setScale(scale) {
+      currentScale = Math.max(0.6, Math.min(2.2, scale));
+      box.style.transform = `scale(${currentScale})`;
+    }
+
+    card.querySelector('.btn-zoom-in')?.addEventListener('click', () => {
+      setScale(currentScale + 0.15);
+    });
+
+    card.querySelector('.btn-zoom-out')?.addEventListener('click', () => {
+      setScale(currentScale - 0.15);
+    });
+
+    card.querySelector('.btn-zoom-reset')?.addEventListener('click', () => {
+      setScale(1.0);
+    });
+
+    card.querySelector('.btn-fullscreen')?.addEventListener('click', () => {
+      const isFull = card.classList.toggle('fullscreen-mode');
+      const btn = card.querySelector('.btn-fullscreen');
+      if (btn) btn.textContent = isFull ? '✕' : '⛶';
+      if (!isFull) setScale(1.0);
+    });
+  });
 }
 
 // Reading Progress Bar

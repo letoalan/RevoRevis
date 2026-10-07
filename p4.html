@@ -192,38 +192,69 @@
 
       <div class="mermaid-card">
         <div class="mermaid-meta">
-          <span style="font-weight: 700; color: var(--text-main);">Dynamique : Du coup d'État du 18 brumaire à la chute finale de l'Empire</span>
-          <span class="mermaid-hint">🔍 Explorez la double dimension de modernisation intérieure et d'expansion militaire</span>
+          <div class="mermaid-title-area">
+            <span class="mermaid-title-text">Dynamique impériale : Des masses de granit consulaires à la chute de Waterloo</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="mermaid-toolbar" role="toolbar" aria-label="Outils d'affichage du schéma">
+              <button type="button" class="mermaid-tool-btn btn-zoom-in" title="Agrandir (+)">＋</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-out" title="Réduire (-)">－</button>
+              <button type="button" class="mermaid-tool-btn btn-zoom-reset" title="Réinitialiser l'affichage">⟲</button>
+              <button type="button" class="mermaid-tool-btn btn-fullscreen" title="Plein écran">⛶</button>
+            </div>
+            <span class="mermaid-hint">🔍 Schéma interactif avec zoom</span>
+          </div>
         </div>
+
+        <!-- Légende unifiée -->
+        <div class="mermaid-legend">
+          <span class="legend-title">Légende :</span>
+          <span class="legend-pill genesis">🔵 Stabilisation consulaire</span>
+          <span class="legend-pill crisis">🔴 Empire autoritaire</span>
+          <span class="legend-pill pivot">🟣 Expansion européenne</span>
+          <span class="legend-pill result">🟡 Résistances & Bilan 1815</span>
+        </div>
+
         <div class="mermaid-box">
           <pre class="mermaid">
 flowchart TD
-    subgraph PriseDuPouvoir["1. Coup d'État & Ordre consulaire (1799-1804)"]
-        B1["18-19 brumaire an VIII : Bonaparte Premier Consul"]
-        B2["Centralisation administrative : création des préfets (1800)"]
-        B3["Pacification religieuse : Concordat de 1801 avec Pie VII"]
-        B4["Modernisation durable : Franc germinal, Banque de France, Lycées"]
-        B5["Code civil des Français (1804) : égalité civile & protection des biens"]
+    classDef genesis fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a8a;
+    classDef crisis fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#991b1b;
+    classDef pivot fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#581c87;
+    classDef result fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#92400e;
+
+    subgraph Act1["1. Coup d'État & Stabilisation intérieure (1799-1804)"]
+        B1["18 brumaire an VIII (nov. 1799) : Coup d'État<br>Bonaparte Premier Consul tout-puissant"]:::genesis
+        B2["Masses de granit : Préfets (1800) • Franc germinal • Lycées"]:::genesis
+        B3["1801 : Signature du Concordat avec Pie VII<br>Fin de la discorde religieuse"]:::genesis
+        B4["21 mars 1804 : Promulgation du Code civil<br>Égalité civile • Sacralisation de la propriété"]:::genesis
     end
 
-    subgraph GrandEmpire["2. L'Empire conquérant & l'apogée européen (1804-1811)"]
-        E1["2 décembre 1804 : Sacre impérial de Napoléon Ier"]
-        E2["Autoritarisme intérieur : censure de la presse, police politique"]
-        E3["2 décembre 1805 : Triomphe d'Austerlitz face aux Austro-Russes"]
-        E4["Europe vassalisée : Royaumes frères, Blocus continental contre l'Angleterre"]
-        E5["Diffusion du Code civil & abolition de la féodalité en Europe"]
+    subgraph Act2["2. Le Grand Empire et l'hégémonie militaire (1804-1811)"]
+        E1["2 décembre 1804 : Sacre de Napoléon Ier<br>Monarchie impériale autoritaire • Censure"]:::crisis
+        E2["2 décembre 1805 : Triomphe d'Austerlitz<br>Chef-d'œuvre tactique • Hégémonie continentale"]:::crisis
+        E3["1806 : Décret du Blocus continental<br>Guerre économique totale contre l'Angleterre"]:::pivot
+        E4["Exportation du Code civil & abolition de la féodalité<br>Modernisation juridique des pays conquis"]:::pivot
     end
 
-    subgraph ChuteImperiale["3. Éveil des nationalismes & effondrement (1812-1815)"]
-        F1["Résistance nationale des peuples occupés (Espagne, Allemagne)"]
-        F2["1812 : Retraite désastreuse de Russie (perte de la Grande Armée)"]
-        F3["1814 : Campagne de France, première abdication & exil à l'île d'Elbe"]
-        F4["1815 : Les Cent-Jours & défaite ultime de Waterloo (18 juin)"]
-        F5["Congrès de Vienne : Restauration monarchique mais idéaux révolutionnaires ancrés"]
+    subgraph Act3["3. Résistances nationales, désastre & bilan (1812-1815)"]
+        F1["Éveil des sentiments nationaux anti-français<br>Guérilla d'Espagne • Soulèvement patriotique prussien"]:::result
+        F2["1812 : Retraite désastreuse de Russie<br>Anéantissement de la Grande Armée"]:::result
+        F3["18 juin 1815 : Défaite décisive de Waterloo<br>Fin définitive du Premier Empire"]:::crisis
+        F4["Congrès de Vienne (1815) : Restauration des monarques<br>Mais les principes révolutionnaires sont ineffaçables"]:::result
     end
 
-    PriseDuPouvoir --> GrandEmpire
-    GrandEmpire --> ChuteImperiale
+    B1 --> B2
+    B1 --> B3
+    B2 & B3 --> B4
+    B4 --> E1
+    E1 --> E2
+    E2 --> E3
+    E2 --> E4
+    E3 & E4 --> F1
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
           </pre>
         </div>
       </div>
